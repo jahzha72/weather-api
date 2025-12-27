@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('kim.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;          
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  text-align: left;
+  padding: 20px;
+}
+
+main {
+  flex: 1;                 
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;          
+}
+
+header h1 {
+  color: #21aeff;
+  margin: 30px 0 20px 0; 
+  background-color: rgb(255, 255, 255);
+  width: 243px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.623);
+  font-family:'Times New Roman', Times, serif;
+}
+
+
+.search-container {
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+input {
+  padding: 10px 15px;
+  width: 220px;
+  font-size: 17px;
+  font-family: 'Times New Roman', Times, serif;
+  border: 2px solid #097cff;     
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(47, 86, 131, 0.3); 
+  transition: all 0.3s ease;
+  outline: none;                 
+}
+
+input:focus {
+  border-color: #21aeff;         
+  box-shadow: 0 4px 12px rgba(33, 174, 255, 0.5); 
+  transform: scale(1.02);
+}
+
+
+button {
+  padding: 10px 15px;
+  cursor: pointer;
+  height: 43px;
+  width: 100px; 
+  background-color: #02668dfd;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: normal;
+  transition: all 0.3s ease;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+button:hover {
+  background-color: #418ebb; 
+  transform: translateY(-3px) scale(1.05); 
+  box-shadow: 0 6px 10px rgba(0,0,0,0.3); 
+}
+
+button:active {
+  transform: translateY(0) scale(0.98); 
+  box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+}
+
+
+#loading {
+  text-align: left;
+  color: #000000;
+  margin-left: 20px;
+}
+
+#error {
+  color: red;
+  text-align: left;
+  margin: 10px 0 0 20px;
+}
+
+
+#result {
+  display: flex;
+  justify-content: flex-start; 
+  align-items: flex-start;     
+  flex-wrap: wrap;             
+  margin: 20px;
+  gap: 20px;                   
+}
+
+.card {
+  background: rgb(73, 167, 255); 
+  padding: 5px;
+  width: 260px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+  color: #ffffff;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  text-align: center;
+  padding: 0px;              
+  font-size: 15px;
+  color: #ffffff;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-top: 1px solid rgba(255, 255, 255, 0.3); 
+}
+
+
+@media (max-width: 600px) {
+  .card {
+    width: 90%;
+  }
+
+  .search-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+}

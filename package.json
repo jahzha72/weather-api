@@ -1,0 +1,9 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "weather.js",
+  "scripts": {
+    "start": "node weather.js"
+  }
+}
